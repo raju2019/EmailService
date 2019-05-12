@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class EmailExceptionHandler {
 
-    @ResponseStatus(HttpStatus.FAILED_DEPENDENCY)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(value = Exception.class)
     public void handleException(Exception exception) {
         log.error(exception.getMessage());
