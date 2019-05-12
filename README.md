@@ -26,7 +26,8 @@ Failure - 500
 **Setup**
 1. git clone <the repository>
 2. mvn clean install
-3. mvn package && java -jar target/EmailChallenge-1.0-SNAPSHOT.jar 
+3. mvn package && java -jar target/EmailChallenge-1.0-SNAPSHOT.jar
+4. Update your API keys and domain needed for the SendGrid and MailGun in  mailgun.properties and sendgrid.properties
 
 **Sample Request**
 
