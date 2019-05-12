@@ -20,6 +20,7 @@ Failure - 500
 1.) Dockerize the Service
 2.) Perfomance Testing
 3.) Add more tests
+4.) Dependency of lambok could have been avoided by using manually adding getters and setters , but needed slf4j for logging so have kept.
 
 
 **Setup**
