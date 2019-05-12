@@ -9,7 +9,7 @@ Approach1 : Using Circuit Breaker Pattern using Hsyterix, there are two services
 if one fails there is a Hysterix Fallback command to continue the execution
 
 Approach2: Using Completable Future to asynchronously execute the first service (MailGun). In case there is an Exception then the second email implementation (SendGrid) is invoked
-If both the implementation fails an Error is thrown 
+If both the implementation fails an Exception is thrown 
 
 
 **REST HTTPS Codes**
@@ -21,6 +21,7 @@ Failure - 500
 2.) Perfomance Testing
 3.) Add more tests
 4.) Dependency of lambok could have been avoided by using manually adding getters and setters , but needed slf4j for logging so have kept.
+5.) Swagger Contracts could have been implemented
 
 
 **Setup**
